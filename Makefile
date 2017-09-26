@@ -7,6 +7,7 @@ CPP=g++ $(CXXFLAGS) -ggdb -pthread
 CPPSO=$(CPP) -fPIC -shared
 
 EXEC=cd cd.so
+EXEC+=sleep sleep.so
 
 all: $(EXEC)
 
@@ -16,7 +17,7 @@ module: all
 clean:
 	/bin/rm -f $(EXEC)
 
-cd: cd.c
+%: %.c
 	$(CPP) -o $@ $<
-cd.so: cd.c
+%.so: %.c
 	$(CPPSO) -o $@ $<
