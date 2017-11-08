@@ -4,3 +4,5 @@ sleep.so
 sleep
 cat
 cat.so
+echo
+echo.so

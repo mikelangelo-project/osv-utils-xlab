@@ -9,6 +9,7 @@ CPPSO=$(CPP) -fPIC -shared
 EXEC=cd cd.so
 EXEC+=sleep sleep.so
 EXEC+=cat cat.so
+EXEC+=echo echo.so
 
 all: $(EXEC)
 
