@@ -2,3 +2,5 @@ cd.so
 cd
 sleep.so
 sleep
+cat
+cat.so
