@@ -10,6 +10,7 @@ EXEC=cd cd.so
 EXEC+=sleep sleep.so
 EXEC+=cat cat.so
 EXEC+=echo echo.so
+EXEC+=template template.so
 
 all: $(EXEC)
 
