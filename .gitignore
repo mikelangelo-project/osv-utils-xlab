@@ -8,3 +8,5 @@ echo
 echo.so
 template
 template.so
+showenv
+showenv.so
